@@ -1,0 +1,20 @@
+.container-section{
+    position: sticky;
+    background: white;
+    z-index: 9;
+    position: sticky; 
+    top: 0px;
+    .section-header{
+        .header{
+            width: 105px;
+            height: 52px;
+            background-color: rgb(230, 0, 18);
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            color: white;
+        }
+    }
+}

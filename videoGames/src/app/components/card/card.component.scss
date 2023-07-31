@@ -1,0 +1,60 @@
+
+.card{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: inline-block;
+    .card-body{
+            .body-title{
+                font-size: 16px;
+                margin: 0px;
+                color: rgb(72, 72, 72);
+            }
+            .body-date{
+                margin-top: 0.25rem;
+                font-size: 0.75rem;
+                color: rgb(114, 114, 114);
+                padding-bottom: 20px;
+            }
+            .body-price{
+                font-weight: 700;
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+            .body-text{
+                color: rgb(72, 72, 72);
+                font-size: 0.75rem;
+                padding-left: 0.5rem;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgb(230, 0, 18);
+
+                }
+                
+            }
+            .body-btn{
+                &:active{
+                    border: none;
+                }
+            }
+            .body-heart{
+                color: red;
+                font-size: 18px;
+            }
+        
+    }
+}
+
+
+.bi.up{
+    //background: green;
+}
+.bi.down{
+   // background: transparent;
+}

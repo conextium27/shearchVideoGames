@@ -1,0 +1,9 @@
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: min-content;
+    gap: 15px;
+}
+.container{
+    max-width: 100% !important;
+}
