@@ -1,0 +1,23 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<main class="container">
+        <div class="col-md-2 offset-md-10 dropdown dropdown-btn">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Organizar
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" (click)="order('upward')">Ascendente</a></li>
+            <li><a class="dropdown-item" (click)="order('falling')">Descendente</a></li>
+          </ul>
+        </div>
+        <div class="row ">
+          <div class="col grid-card">
+            <ng-container *ngFor="let card of cards">
+              <app-card [card]='card'></app-card>
+            </ng-container>
+          </div>
+    
+        </div>
+      </main> 
+    
