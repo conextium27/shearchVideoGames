@@ -3,11 +3,11 @@ import { ERelease } from 'src/enums/release.enum';
 import { EPlatform } from 'src/enums/platforms.enum';
 
 export interface IGameCards {
-    imagen:      string;
-    nombre:      EName;
-    lanzamiento: ERelease;
-    precio:      number;
-    plataforma:  EPlatform;
-    id:          number;
+    image: string;
+    name: EName;
+    release: ERelease;
+    price: number;
+    platform: EPlatform;
+    id: number;
 }
 

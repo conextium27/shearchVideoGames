@@ -1,28 +1,18 @@
-<!-- <div class="align-self-end dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Organizar
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Ascendente</a></li>
-        <li><a class="dropdown-item" href="#">Descendente</a></li>
-    </ul>
-</div> -->
 <article  class="card">
-    <img src="{{card.imagen}}" class="card-img-top" alt="...">
+    <img src="{{card.image}}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="body-title">{{card.nombre}}</h5>
-        <div class="body-date">{{card.lanzamiento}}</div>
-        <div class="body-price">{{card.precio | currency:'MXN'}}</div>
+        <h5 class="body-title">{{card.name}}</h5>
+        <div class="body-date">{{card.release}}</div>
+        <div class="body-price">{{card.price | currency:'MXN'}}</div>
         <div class="row" >
             <div class="col d-flex justify-content-between align-items-center">
                 <p class="body-text position-relative">
-                    {{card.plataforma}}
+                    {{card.platform}}
                 </p>
                 <button type="button" class="btn body-btn">
                     <i [ngClass]="{'bi bi-heart-fill': liked, 'bi bi-heart' : !liked }" 
                     class="col-2 body-heart" 
-                    (click)='toggle()'></i>
+                    (click)='wishList()'></i>
                 </button>
 
             </div>
